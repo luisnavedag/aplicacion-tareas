@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="aplicacion-tareas">
         <div className='contenedor-logo'>
-          <img 
+          <img alt='logo'
           src={logoToDoList} 
           className='logo' 
           />

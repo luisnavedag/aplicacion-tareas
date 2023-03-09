@@ -10,24 +10,32 @@
 .tarea-input{
   width: 350px;
   font-size: 18px;
-  background-color: white;
+  background-color: darkgrey;
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #00471b;
+  border: 2px solid gray;
   outline: none;
 }
 
 
-/*Boton Agragar Tarea*/
+/*Boton Agregar Tarea*/
 .tarea-boton{
   padding: 16px;
   font-size: 18px;
+  font-weight: 700;
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background-color: #00471b;
-  color: white;
+  background-color: #02ECFF;
+  color: rgba(0, 0, 0, 0.717);
   text-transform: capitalize;
+  transition: .3s ease;
+}
+
+.tarea-boton:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.717);
+  transition: .3s ease;
 }

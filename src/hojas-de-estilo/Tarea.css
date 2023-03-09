@@ -1,7 +1,9 @@
 .tarea-contenedor{
+  color: black;
+  font-weight: 600;
   width: 500px;
   min-height: 65px;
-  background-color: #1b1b32;
+  background-color: #02ECFF;
   margin: 5px 0;
   padding: 8px 15px 8px 20px;
   display: flex;
@@ -13,15 +15,15 @@
 }
 
 .tarea-contenedor:nth-child(3n + 1){
-  background-color: #1b1b32;
+  background-color: #02ECFF;
 }
 
 .tarea-contenedor:nth-child(3n + 2){
-  background-color: #2a2a40;
+  background-color: #02eaffcd;
   }
 
 .tarea-contenedor:nth-child(3n + 3){
-    background-color: #3b3b4f;
+    background-color: #02eaff8e;
     }
   
 
@@ -45,6 +47,8 @@
 
 /*Tarea Completada*/
 .tarea-contenedor.completada{
-  background-color: #5a01a7;
+  background-color: rgba(0, 0, 0, 0.758);
   text-decoration: line-through;
+  color: white;
+  font-weight: 600;
 }

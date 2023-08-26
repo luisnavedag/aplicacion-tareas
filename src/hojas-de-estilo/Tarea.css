@@ -36,7 +36,7 @@
   font-size: 20px;
   display: flex;
   align-items: center;
-  overflow-wrap: anywhere;
+  /* overflow-wrap: anywhere; */
 }
 
 .tarea-icono{
@@ -51,4 +51,12 @@
   text-decoration: line-through;
   color: white;
   font-weight: 600;
+}
+
+
+@media (min-width: 371px) and (max-width: 767px){
+  .tarea-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

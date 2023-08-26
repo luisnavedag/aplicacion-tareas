@@ -56,3 +56,11 @@ h1{
   padding: 25px;
   border-radius: 26px;
 }
+
+
+@media (min-width: 371px) and (max-width: 767px){
+  .tareas-lista-principal{
+    width: 380px;
+    
+  }
+}

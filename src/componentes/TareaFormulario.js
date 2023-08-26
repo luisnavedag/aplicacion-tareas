@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../hojas-de-estilo/TareaFormulario.css';
 import { v4 as uuidv4 } from 'uuid';
 
-function TareaFormulario(props){
+function TareaFormulario({ onSubmit }){
 
     const [input, setInput] = useState('');
 
@@ -17,13 +17,13 @@ function TareaFormulario(props){
             texto: input,
             completada: false
         }
-    
-    props.onSubmit(tareaNueva);
+    onSubmit(tareaNueva);
+    setInput('')
 }
 
     return(
-        <form className="tarea-formulario" 
-        onSubmit={manejarEnvio}>
+        <form className="tarea-formulario" onSubmit={manejarEnvio}
+        >
             <input 
             type="text" 
             className='tarea-input'
@@ -31,7 +31,7 @@ function TareaFormulario(props){
             name='texto'
             onChange={manejarCambio}
             />
-             <button
+             <button type='submit'
         className='tarea-boton'>
             Agregar Tarea
             </button>
